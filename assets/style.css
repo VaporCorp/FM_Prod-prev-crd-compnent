@@ -14,11 +14,13 @@ body {
 }
 
 main {
-  margin: 3rem auto;
-  max-width: 90%;
+  margin: 3rem 1rem;
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 10px;
   padding-bottom: 0.1rem;
+}
+main .desktop-product-image {
+  display: none;
 }
 main img {
   border-radius: 10px 10px 0 0;
@@ -26,8 +28,8 @@ main img {
 }
 main p, main h1, main a {
   padding: 0 1.5rem;
-  margin: 0.75rem 0;
-  font-family: "Montserrat";
+  margin: 0.7rem 0;
+  font-family: "Montserrat",sans-serif;
   font-size: 14px;
   color: hsl(228deg, 12%, 48%);
 }
@@ -39,7 +41,7 @@ main .article-type, main .article-desc {
 }
 main .article-title {
   color: hsl(212deg, 21%, 14%);
-  font-family: "Fraunces";
+  font-family: "Fraunces", sans-serif;
   font-size: 2rem;
 }
 main .prices {
@@ -47,7 +49,7 @@ main .prices {
   align-items: flex-end;
 }
 main .reduced-price {
-  font-family: "Fraunces";
+  font-family: "Fraunces", sans-serif;
   color: #348366;
   font-size: 2rem;
   margin-bottom: 0;
@@ -74,11 +76,46 @@ main a img {
   margin-right: 0.5rem;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 632px) {
   main {
-    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    max-height: 482px;
+    max-width: 600px;
+    display: flex;
+  }
+  main .desktop-product-image {
+    display: block;
+  }
+  main .mobile-product-image {
+    display: none;
   }
   main img {
-    float: left;
+    max-width: 300px;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px 0 0 10px;
+  }
+  main div {
+    max-width: 300px;
+  }
+  main p, main h1 {
+    margin: 1rem 1rem;
+  }
+
+  main a {
+    margin: 1.25rem 1.5rem;
+  }
+  .attribution {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .add-to-cart-button:hover {
+    background-color: #1A4032;
   }
 }/*# sourceMappingURL=style.css.map */
