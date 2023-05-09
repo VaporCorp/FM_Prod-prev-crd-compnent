@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontEnd Mentor link](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Solution URL: [FrontEnd Mentor link](https://www.frontendmentor.io/solutions/product-preview-card-component-made-with-html-css-flex-AmsQRS4Dus)
+- Live Site URL: [GitHub Pages](https://vaporcorp.github.io/FM_Prod-prev-crd-compnent/)
 
 ## My process
 
